@@ -1,7 +1,0 @@
-Get-Process | Where-Object { $_.Path -eq "C:\Windows\System32\TTTT64.exe" } | Stop-Process -Force -ErrorAction SilentlyContinue; # Change to fit your evnrionment
-Remove-Item -Path "HKLM:\SYSTEM\CurrentControlSet\Services\x00000" -Recurse -Force -ErrorAction SilentlyContinue; # Change to fit your evnrionment
-Remove-Item -Path "C:\Windows\System32\TTTT64.exe" -Force -ErrorAction SilentlyContinue; # Change to fit your evnrionment
-Remove-Item -Path "C:\Windows\System32\x00000.dat" -Force -ErrorAction SilentlyContinue; # Change to fit your evnrionment
-Remove-Item -Path "C:\Windows\System32\winsvcf" -Recurse -Force -ErrorAction SilentlyContinue
-##################################################################################################
-Restart-Computer -Force # Use after finishing
